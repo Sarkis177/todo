@@ -16,7 +16,7 @@
     "rules": {
         "no-console": ["warn", { "allow": ["warn", "error"] }],
         "curly": ["error", "multi-line"],
-        "react/no-array-index-key": ["error"],
+        // "react/no-array-index-key": ["error"],
         "@typescript-eslint/naming-convention": [
             "error",
             {

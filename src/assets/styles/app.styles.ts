@@ -1,38 +1,64 @@
-import styled, {keyframes} from 'styled-components'
+import styled, { keyframes } from 'styled-components';
 
 export const SApp = styled.div`
-  text-align: center;
-`
+    text-align: center;
+`;
 
-export const SHeader = styled.header`
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-`
+export const SInput = styled.input`
+    width: 300px;
+    height: 25px;
+    font-size: 17px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin-right: 10px;
+`;
 
-const spin = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`
+export const SButton = styled.button`
+    width: 5%;
+    height: 30px;
+    border: 2px solid;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    :hover {
+        background-color: rgb(105, 105, 105);
+        color: white;
+    }
+`;
 
-export const SLogo = styled.img`
-  height: 40vmin;
-  pointer-events: none;
+export const SSmallbtn = styled(SButton)`
+    width: 55px;
+    font-size: 14px;
+    margin-left: 9px;
+    border: 1px solid;
+`;
 
-  @media (prefers-reduced-motion: no-preference) {
-    animation: ${spin} infinite 20s linear;
-  }
-`
+export const SButtonShow = styled(SButton)`
+    width: 172px;
+    font-size: 15px;
+    margin: 19px 0 10px 10px;
+`;
 
-export const SLink = styled.a`
-  color: #61dafb;
-`
+export const STaskRem = styled.div`
+    font-size: 20px;
+    margin-bottom: 25px;
+`;
+
+export const STodo = styled.div`
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const STask = styled.p`
+    margin: 0px 15px;
+    font-size: 25px;
+`;
+
+export const SCheckBox = styled.p`
+    display: flex;
+    align-items: flex-end;
+    font-size: 20px;
+`;

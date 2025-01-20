@@ -8,6 +8,7 @@ export default createGlobalStyle`
     sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color:rgb(211, 211, 211)
   }
 
   code {
